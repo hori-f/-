@@ -1,0 +1,189 @@
+
+main {
+  width: 1000px;
+  margin: 10px auto;
+}
+.h1_title{
+  margin-top: 100px;
+  line-height: 40px;
+  font-size :150px;
+}
+dl{
+  line-height: 0px;
+  font-size:25px;
+  left:0;}
+dd{
+  line-height: 0.5px;
+  margin-bottom: 12px;
+  text-align: left;
+  font-size:10px}
+dt{
+  line-height: 2px;
+  margin-bottom: 2px;
+  margin-left: 50px;
+  text-align: left;
+  font-size:15px}
+
+.di_howtouse{
+  font-family: "Century Gothic", 'Lato', sans-serif;
+  line-height: 0px;
+  margin-bottom:20px;
+  font-size:10px
+}
+.input-text{
+  line-height: 7px;
+  font-size:15px}
+.input-range{
+  font-size:17px}
+.dd_howtouse{
+  line-height: 15px;
+  margin-bottom: 20px;
+  text-align: left;
+  font-size:12px}
+.dt_howtouse{
+  margin-bottom: 20px;
+  margin-left: 50px;
+  text-align: left;
+  font-size:15px}
+.dtstyle{
+  line-height: 2px;
+  font-size:20px;
+  margin-left:80px;
+  margin-top:30px;
+}
+.dtstyle2{
+  line-height: 1px;
+  font-size:15px;
+  margin-left:120px;
+}
+
+.pbox {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /* 幅3等分 */
+  grid-template-rows: 100px 100px; /* 100pxの2行 */
+  grid-gap: 10px; /* 隙間10px */
+  margin-bottom: 20px;
+}
+.pbox > div {
+  border-radius: 5px;
+  background: none ;
+  border: none;
+  padding: 1em;
+}
+/* 1から数え始める */
+.abox {
+  grid-column: 2/4; /* 列開始位置2(の始端)/終了位置4(の始端) */
+}
+.bbox {
+  grid-column: 1/2;
+}
+.cbox {
+  grid-column: 4/6;
+}
+.dbox {
+  grid-column: 2/4;
+}
+
+body {
+  font-family: "Century Gothic", 'Lato', sans-serif;
+}
+
+a {
+text-decoration: none;
+}
+.start{
+  bottom:0;
+  right:0;
+  margin-bottom:30px;
+  color: rgb(164, 164, 164);
+  font-size:40px;
+}
+
+.et-slide1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh; /*80*/
+  background: #eee;
+  text-align: center;
+  padding: 0 2em;
+  margin-top: 5vh;
+  position: relative;
+  z-index:1;
+}
+.et-slide2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh; /*80*/
+  background: #eee;
+  text-align: center;
+  padding: 0 2em;
+  margin-top: 5vh;
+  position: relative;
+  z-index:1;
+}
+.et-hero-tabs{
+  bottom:0;
+  display: flex;
+  left:10%;
+  flex-direction: row;
+  position: fixed;/*absolute*/
+  width: 80%;
+  height: 70px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  z-index:10;
+}
+.et-hero-tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 5;
+  color: #000;
+  letter-spacing: 5px;
+  font-size: 15px;
+}
+.section0 {
+  margin: auto;
+  text-align: center;
+  vertical-align: middle;
+  font-size:50px;
+  width: 80%;
+  height: 150px;
+  background-color: #dfdfdf;
+  top: -100px;/* 配置調整（重要！） */
+  margin-top: 100px;/* 配置調整（重要！） */
+  transition: top 300ms;/*  ここのtransitionでtopだけを指定する（重要！）  */
+}
+/* スティッキー時に.stickyクラスを追加 */
+.section0.sticky {
+  margin: 10%;
+  text-align: center;
+  font-size:10px;
+  width: 80%;
+  position: fixed;/* 上に固定 */
+  top: 0;/* 上からスッと表示させる（重要！） */
+  margin-top: 0;/* 0にすることでtopで上に配置 */
+  height: 50px;/* 小さく変化させる */
+  background-color: #ffffff;
+  z-index:10;
+}
+.flow-navi__wrapper {
+  display:none;
+}
+.flow-navi {
+  position: fixed;
+  top: 260px;
+  z-index: 10;
+}
+@media(max-width:863px) {
+  .flow-navi__wrapper {
+    position: static;
+  }
+  .flow-navi {
+    display:none;
+  }
+}
+

@@ -1,0 +1,97 @@
+.section0 {
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  font-size:50px;
+  width: 80%;
+  height: 100px;
+  background-color: #dfdfdf;
+  top: -100px;/* 配置調整（重要！） */
+  margin-top: 10px;/* 配置調整（重要！） 100px*/
+  transition: top 300ms;/*  ここのtransitionでtopだけを指定する（重要！）  */
+}
+/* スティッキー時に.stickyクラスを追加 */
+.section0.sticky {
+  margin: 10%;
+  justify-content: center;
+  align-items: center;
+  font-size:10px;
+  width: 80%;
+  position: fixed;/* 上に固定 */
+  top: 0;/* 上からスッと表示させる（重要！） */
+  margin-top: 0;/* 0にすることでtopで上に配置 */
+  height: 50px;/* 小さく変化させる */
+  background-color: #ffffff;
+}
+
+.section1{
+  width: 80%;
+  text-align: center;
+  height: 1000px;
+  /* position: relative; */
+  background: #dfdfdf;
+  margin: auto;
+  }    
+
+
+.back{
+  bottom:0;
+  right:0;
+  margin-bottom:30px;
+  margin-right:100px;
+  position:fixed;
+  color: rgb(164, 164, 164);
+  font-size:20px;
+}
+.sub{
+  font-size:10px;
+}
+h3{
+  font-size:15px;
+}
+
+.table{
+  font-size:100px;
+  height: 300px;
+  margin-left:12%;
+  margin-top:10%;
+  margin-bottom:30%;
+  background: #dfdfdf;
+}
+
+.tablestyle{
+  font-family: "Century Gothic", 'Lato', sans-serif;
+  margin-right:100px;
+  text-align: center;
+}
+.tdstyle{
+  line-height: 50px;
+  font-size:20px;
+  margin-bottom:30px;
+}
+.tdstyle2{
+  font-size:10px;
+  margin-bottom:10px;
+  margin-right:10px;
+}
+.trstyle{
+  font-size:15px;
+  margin-bottom:10px;
+  margin-right:10px;
+}
+.flow-navi__wrapper {
+  display:none;
+}
+.flow-navi {
+  position: fixed;
+  top: 260px;
+  z-index: 10;
+}
+@media(max-width:863px) {
+  .flow-navi__wrapper {
+    position: static;
+  }
+  .flow-navi {
+    display:none;
+  }
+}
